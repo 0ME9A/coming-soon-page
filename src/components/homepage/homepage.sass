@@ -1,0 +1,110 @@
+@import ../../variable
+header
+    @include size(100%, 100vh)
+    position: relative
+    display: flex
+    overflow: hidden
+    .textcontent
+        @include size(60%, 100%)
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 10%
+        .text-area
+            @include size(100%)
+            top: 50px
+            position: relative
+            h1
+                font-size: 5rem
+                letter-spacing: .8rem
+                color: $dark-color
+                font-weight: 600
+                span
+                    font-size: 5rem
+                    font-weight: 300
+                    color: $primary-color
+            p
+                padding: 1.8rem 0
+                line-height: 1.6rem
+                width: 450px
+                color: $primary-color
+            form
+                position: relative
+                width: 450px
+                input
+                    @include size(450px, 50px)
+                    border-radius: 25px
+                    border: 1px solid hsl(0, 36%, 80%)
+                    padding: 0 1.5rem
+                    &:focus
+                        outline: none
+                        border-width: 2px
+                    &::placeholder
+                        color: hsl(0, 36%, 80%)
+                .error-icon
+                    @include size(1.2rem)
+                    aspect-ratio: 1 / 1
+                    position: absolute
+                    right: 110px
+                    top: calc((50px - 1.2rem) / 2 )
+                button
+                    @include size(80px, 50px)
+                    border-radius: 25px
+                    position: absolute
+                    right: 0px
+                    top: 0px
+                    border: none
+                    transition: .5s !important
+                    background-image: $linear-gr-default
+                    &:hover
+                        background-image: $linear-gr-hover
+                        box-shadow: 0px 5px 20px hsl(0, 80%, 86%),0px 15px 25px hsl(0, 80%, 86%)
+                    img
+                        @include size(.7rem)
+                .disableBtn
+                    border: 2px solid 
+                label
+                    padding: .5rem 1.5rem
+                    display: block
+                    color: $warn-color
+                .error
+                    opacity: 0
+        figure
+            position: absolute
+            left: 0
+            @include size(100%, 100%)            
+            overflow: hidden
+            background: $light-color
+            img
+                @include size(100%, 100%)                
+                object-fit: cover
+    picture
+        @include size(40%, 100%)
+        overflow: hidden
+@media screen and (max-width: 1024px) 
+    header 
+        flex-direction: column-reverse
+        height: auto
+        top: 100px
+        picture
+            @include size(100%)
+            max-height: 40%
+            height: 100%
+            overflow: visible
+        .textcontent
+            @include size(100%)
+            .text-area
+                display: flex
+                flex-direction: column
+                align-items: center
+                text-align: center
+                top: 0
+                h1
+                    font-size: 4rem
+                p
+                    max-width: 100%
+                form
+                    max-width: 100%
+                input
+                    width: 100% !important

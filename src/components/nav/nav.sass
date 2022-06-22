@@ -1,0 +1,17 @@
+@import ../../variable
+nav
+    @include size(100%, 20%)
+    min-height: 100px
+    position: fixed
+    top: 0
+    z-index: 5
+    display: flex
+    align-items: center
+    padding-left: 10%
+    img
+        @include size(auto, 30px)
+        
+@media screen and (max-width: 1024px) 
+    nav
+        background: $light-color
+        height: 100px

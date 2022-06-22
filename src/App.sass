@@ -1,0 +1,16 @@
+@import ./variable
+*
+    margin: 0
+    padding: 0
+    font-family: 'Josefin Sans', sans-serif
+    box-sizing: border-box
+    font-size: 16px
+
+#root
+    @include size(100%, 100vh)
+img
+    @include size(100%, 100%)
+    object-fit: cover
+@media screen and (max-width: 1024px) 
+    img
+        height: auto
