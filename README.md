@@ -1,5 +1,6 @@
 # React coming soon template
-![react-signup-app](https://user-images.githubusercontent.com/83957658/176335618-517f8e40-76f7-4083-a0e7-7797e3565f6b.png)
+![desktop-design](https://user-images.githubusercontent.com/83957658/176336022-a1b0b353-d58f-40be-8288-fb8127214a3e.jpg)
+
 
 # Getting Started with Create React App
 
