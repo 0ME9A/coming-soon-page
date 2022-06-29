@@ -1,3 +1,6 @@
+# React coming soon template
+![react-signup-app](https://user-images.githubusercontent.com/83957658/176335618-517f8e40-76f7-4083-a0e7-7797e3565f6b.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
